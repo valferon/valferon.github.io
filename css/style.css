@@ -342,7 +342,7 @@ a:hover {
 
 }
 
-#bg {/* background-size: 2250px auto; *//* width: 6750px; */}
+#bg {/* background-size: 2250px auto; */width: 6750px;}
 
 /* Overlay */
 
@@ -1201,4 +1201,5 @@ a
     width: 100%;
 
 }
+
 
