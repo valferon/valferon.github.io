@@ -180,29 +180,7 @@ a:hover {
 
 /* BG */
 
-#bg {
-
-   
-
-    background-color: #cc6600;
-
-    background-image: url("images/bg.jpg");
-
-    background-position: bottom left;
-
-    background-repeat: repeat-x;
-
-    height: 100%;
-
-    left: 0;
-
-    opacity: 1;
-
-    position: fixed;
-
-    top: 0;
-
-}
+#bg {background-color: #cc6600;background-image: url("images/bg.jpg");background-position: bottom left;background-repeat: repeat-x;height: 100%;left: 0;opacity: 1;position: fixed;top: 0;}
 
 @-moz-keyframes bg {
 
@@ -364,13 +342,7 @@ a:hover {
 
 }
 
-#bg {
-
-    background-size: 2250px auto;
-
-    width: 6750px;
-
-}
+#bg {/* background-size: 2250px auto; *//* width: 6750px; */}
 
 /* Overlay */
 
@@ -454,41 +426,7 @@ a:hover {
 
 }
 
-#overlay {
-
-    -moz-animation: overlay 1.5s 1.5s forwards;
-
-    -webkit-animation: overlay 1.5s 1.5s forwards;
-
-    -o-animation: overlay 1.5s 1.5s forwards;
-
-    -ms-animation: overlay 1.5s 1.5s forwards;
-
-    animation: overlay 1.5s 1.5s forwards;
-
-    background-attachment: fixed, fixed;
-
-    background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
-
-    background-position: top left, center center;
-
-    background-repeat: repeat, no-repeat;
-
-    background-size: auto, cover;
-
-    height: 100%;
-
-    left: 0;
-
-    opacity: 0;
-
-    position: fixed;
-
-    top: 0;
-
-    width: 100%;
-
-}
+#overlay {-moz-animation: overlay 1.5s 1.5s forwards;-webkit-animation: overlay 1.5s 1.5s forwards;-o-animation: overlay 1.5s 1.5s forwards;-ms-animation: overlay 1.5s 1.5s forwards;animation: overlay 1.5s 1.5s forwards;background-attachment: fixed, fixed;background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");background-position: top left, center center;background-repeat: repeat, no-repeat;background-size: auto, cover;height: 100%;left: 0;opacity: 0;position: fixed;top: 0;width: 100%;}
 
 /* Main */
 
@@ -1228,10 +1166,8 @@ a:hover {
 
 }
 
-#header nav a span {
-
-    display: none;
-
+#header nav a span {gr
+a
 }
 
 /* Footer */
@@ -1265,3 +1201,4 @@ a:hover {
     width: 100%;
 
 }
+
