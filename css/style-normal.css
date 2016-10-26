@@ -255,13 +255,5 @@ body, input, select, textarea {
 }
 
 
-#bg {
+#bg {/* background-size: 1200px auto; *//* width: 3600px; */}
 
-
-    background-size: 1200px auto;
-
-
-    width: 3600px;
-
-
-}
