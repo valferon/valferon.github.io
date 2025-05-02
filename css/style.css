@@ -1,14 +1,15 @@
-
-@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700&display=swap");
 
 @import url("font-awesome.min.css");
 
 /* Basic */
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
 
-
-    font-family:'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
 
     font-size: 15pt;
 
@@ -24,7 +25,9 @@ body {
 
     background: white;
 
-    overflow: hidden;
+    overflow-x: hidden;
+
+    overflow-y: auto;
 
 }
 
@@ -44,15 +47,15 @@ body.loading * {
 
 a {
 
-    -moz-transition: border-color 0.2s ease-in-out;
+    -moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
-    -webkit-transition: border-color 0.2s ease-in-out;
+    -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
-    -o-transition: border-color 0.2s ease-in-out;
+    -o-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
-    -ms-transition: border-color 0.2s ease-in-out;
+    -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
-    transition: border-color 0.2s ease-in-out;
+    transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
     border-bottom: dotted 1px;
 
@@ -67,6 +70,8 @@ a {
 a:hover {
 
     border-color: transparent;
+
+    color: #4eb980;
 
 }
 
@@ -180,7 +185,28 @@ a:hover {
 
 /* BG */
 
-#bg {background-color: #cc6600;background-image: url("images/bg.jpg");background-position: bottom left;background-repeat: repeat-x;height: 100%;left: 0;opacity: 1;position: fixed;top: 0;}
+#bg {
+    background: linear-gradient(to bottom, #cc6600 50%, transparent 50%);
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#bg:after {
+    content: '';
+    background-image: url("images/bg.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 @-moz-keyframes bg {
 
@@ -342,7 +368,10 @@ a:hover {
 
 }
 
-#bg {/* background-size: 2250px auto; */width: 6750px;}
+#bg {
+    /* Remove animation-related properties */
+    width: 100%;
+}
 
 /* Overlay */
 
@@ -426,7 +455,24 @@ a:hover {
 
 }
 
-#overlay {-moz-animation: overlay 1.5s 1.5s forwards;-webkit-animation: overlay 1.5s 1.5s forwards;-o-animation: overlay 1.5s 1.5s forwards;-ms-animation: overlay 1.5s 1.5s forwards;animation: overlay 1.5s 1.5s forwards;background-attachment: fixed, fixed;background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");background-position: top left, center center;background-repeat: repeat, no-repeat;background-size: auto, cover;height: 100%;left: 0;opacity: 0;position: fixed;top: 0;width: 100%;}
+#overlay {
+    -moz-animation: overlay 1.5s 1.5s forwards;
+    -webkit-animation: overlay 1.5s 1.5s forwards;
+    -o-animation: overlay 1.5s 1.5s forwards;
+    -ms-animation: overlay 1.5s 1.5s forwards;
+    animation: overlay 1.5s 1.5s forwards;
+    background-attachment: fixed, fixed;
+    background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 /* Main */
 
@@ -448,7 +494,7 @@ a:hover {
 
 #main:before {
 
-    content:'';
+    content: '';
 
     display: inline-block;
 
@@ -1166,8 +1212,8 @@ a:hover {
 
 }
 
-#header nav a span {gr
-a
+#header nav a span {
+    display: none;
 }
 
 /* Footer */
@@ -1201,5 +1247,3 @@ a
     width: 100%;
 
 }
-
-
