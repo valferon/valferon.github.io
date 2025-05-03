@@ -4,7 +4,7 @@ body,
 input,
 select,
 textarea {
-    font-size: 11pt;
+    font-size: 18pt;
     letter-spacing: 0;
 }
 
@@ -26,39 +26,39 @@ textarea {
 }
 
 #header h1 {
-    font-size: 1.75em;
+    font-size: 3.2em;
 }
 
 #header p {
-    font-size: 0.9em;
+    font-size: 1.8em;
     margin-top: 0.25em;
 }
 
 #header nav {
-    font-size: 0.9em;
+    font-size: 1.4em;
     margin: 1em 0 0 0;
 }
 
 #header nav li {
-    margin: 0 0.25em;
+    margin: 0 0.4em;
     vertical-align: middle;
 }
 
 #header nav a {
-    height: 2.25em;
-    line-height: 2.25em;
-    padding: 0 0.5em;
+    height: 2.8em;
+    line-height: 2.8em;
+    padding: 0 0.8em;
 }
 
 #header nav a:before {
-    font-size: 1.25em;
+    font-size: 1.6em;
 }
 
 /* Footer */
 
 #footer {
     padding: 1em 0;
-    font-size: 0.85em;
+    font-size: 1.2em;
 }
 
 @-moz-keyframes bg {
